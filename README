@@ -2,25 +2,7 @@ nsindex Plugin for DokuWiki
 
 Creates an dynamic list of namespace pages/subns to be used inside a page
 
-Syntax: '{{nsindex' [' ' OPTION ','..] '}}'
- OPTIONs may be:
-  'nopages' => only show namespace links, no pages.
-  'nons'    => only show pages in current namespace, nu sub-namespaces.
-  'nogroup' => do not group list by their first letters
- TODO:
-  'titlesort'
-  'namesort'
-  'numlist'
-  'nonumlist'
-  'notemplate' => alias for 'hide:template'
-  'hide:<PAGENAME>'
-
- NOTES:
-  - The 'start'-page of the current namespace is omitted from the list
-  - Pages using this plugin are not cached at all (no '~~NOCACHE~~' needed)
-
 All documentation for this plugin can be found at
-https://github.com/igittigitt/dokuwiki-plugin-nsindex
 https://www.dokuwiki.org/plugin:nsindex
 
 If you install this plugin manually, make sure it is installed in
