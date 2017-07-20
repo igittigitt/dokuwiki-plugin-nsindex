@@ -170,7 +170,11 @@ class syntax_plugin_nsindex extends DokuWiki_Syntax_Plugin {
                 }
                 $wikipath = $item['id'].':'.$conf['start'];
                 $data[$i]['id'] = $wikipath;  # change wikipath in data
-                $title = p_get_first_heading($wikipath);
+                if ($conf['useheading']) {
+                    $title = p_get_first_heading($wikipath);
+                } else {
+                    $title = '';
+                }
                 if ( ! $title) {
                     $title = noNS(getNS($wikipath));
                 }
