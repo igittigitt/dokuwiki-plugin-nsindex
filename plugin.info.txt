@@ -1,0 +1,7 @@
+base   nsindex
+author Oliver Geisen
+email  oliver@rehkopf-geisen.de
+date   2017-07-20
+name   nsindex plugin
+desc   Creates an dynamic list of namespace pages/subns to be used inside a page
+url    https://github.com/igittigitt/dokuwiki-plugin-nsindex/archive/master.zip
