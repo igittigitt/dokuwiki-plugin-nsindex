@@ -129,13 +129,7 @@ class syntax_plugin_nsindex extends DokuWiki_Syntax_Plugin {
             'nons'       => false,  // exclude start-page of namespaces found
             'nopages'    => false,  // exclude all pages found, include only startpage of sub-namespaces
             'nogroup'    => false,  // do not add alpha-index headings in list
-            'group'      => true,   // opposite of 'nogroup'
-            'titlesort'  => false,  // order entries by title-heading, not by namespace-name
-            'nssort'     => true,   //
-            'numlist'    => false,
-            'nonumlist'  => false,
             'notemplate' => false,  // omitt pages with names like 'template' or '__template' or '_template'
-            'hide'       => false,
             'startns'    => '.',    // where to start lookup (default is current namespace)
         );
     }
