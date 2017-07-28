@@ -1,7 +1,7 @@
 base   nsindex
 author Oliver Geisen
 email  oliver@rehkopf-geisen.de
-date   2017-07-20
+date   2017-07-28
 name   nsindex plugin
 desc   Creates an dynamic list of namespace pages/subns to be used inside a page
 url    https://www.dokuwiki.org/plugin:nsindex
