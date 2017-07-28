@@ -62,7 +62,7 @@ class syntax_plugin_nsindex extends DokuWiki_Syntax_Plugin {
                 $opt = $m;
                 $val = true;
             }
-            if (in_array($m, $data))
+            if (array_key_exists($m, $data))
             {
                 $data[$opt] = $val;
             }
@@ -137,11 +137,9 @@ class syntax_plugin_nsindex extends DokuWiki_Syntax_Plugin {
     /**
      * Build the index from namespace scan
      */
-    private function _build_index($data, &$renderer) {
+    private function _build_index($opts, &$renderer) {
         global $conf;
         global $ID;
-
-        $opts = $data[0];
 
         // get content of namespace (pages and subdirs)
         if ( ! $opts['startns'] || $opts['startns'] == '.') {
